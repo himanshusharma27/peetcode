@@ -13,7 +13,7 @@ const ProblemsPage = () => {
   const [submission, setSubmission] = useState("");
 
     const init = async () => {
-      const response = await fetch(`${backendUrl}/problem/` + cleanId, {
+      const response = await fetch(`http://localhost:3000/problem/` + cleanId, {
         method: "GET",
       });
 
